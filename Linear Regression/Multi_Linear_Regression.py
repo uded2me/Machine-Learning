@@ -8,7 +8,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn import preprocessing
 
 
-df = pd.read_csv('C:/Users/Alexander/Desktop/Python/ML/Linear Regression/melb_data.csv') #Absolute Directory to the excel sheet
+df = pd.read_csv('melb_data.csv') #Absolute Directory to the excel sheet
 df_cleaned = df.dropna() #drop rows with missing data 
 
 X = df_cleaned[['Landsize', 'Bedroom2', 'Bathroom', 'BuildingArea','Distance', 'YearBuilt', 'Lattitude', 'Longtitude' ]] #multiple features for improved price scaling
@@ -30,3 +30,4 @@ print(
   'mean_squared_error : ', mean_squared_error(y_test, predictions)) 
 print(
   'mean_absolute_error : ', mean_absolute_error(y_test, predictions))
+
