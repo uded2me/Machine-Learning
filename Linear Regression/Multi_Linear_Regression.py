@@ -1,11 +1,8 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt #this will be used to visualize the data
-from sklearn import linear_model
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error
-from sklearn import preprocessing
 
 
 df = pd.read_csv('melb_data.csv') #Absolute Directory to the excel sheet
@@ -30,4 +27,5 @@ print(
   'mean_squared_error : ', mean_squared_error(y_test, predictions)) 
 print(
   'mean_absolute_error : ', mean_absolute_error(y_test, predictions))
+
 
